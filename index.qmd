@@ -1,0 +1,488 @@
+---
+title: "WRAIR AFRICA NIGERIA DASHBOARD | JUNE 2024"
+format: dashboard
+theme: lux
+---
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+if(!require(pacman)) install.packages("pacman")
+pacman::p_load(tidyverse,
+               colorspace,
+               plotly,
+               reactable,
+               bslib,
+               bsicons,
+               leaflet,
+               here,
+               ggspatial,
+               janitor,
+               spData,
+               sf,
+               units,
+               rgeoboundaries,
+               rnaturalearth,
+               countrycode,
+               htmltools,
+               reactable,
+               lubridate, 
+               dplyr,
+               shinydashboard,
+               fontawesome,
+               scales,
+               prettydoc,
+               skimr,
+               ggplot2,
+               gganimate,
+               tidyr,
+               readr,
+               gifski,
+               png,
+               gridExtra,
+               grid)
+
+
+```
+
+```{r message=FALSE}
+# Load the data
+
+prog_data <- read_csv("data/prog_data_jun24.csv")
+
+prog_targets <- read_csv("data/fy24_targets.csv")
+
+vl_data <- read_csv("data/vl_data_jun24.csv")
+
+prog_site <- read_csv("data/prog_sites.csv")
+
+
+```
+
+
+
+```{r}
+# Clean the program data
+
+prog_site <- unique(prog_site) %>% 
+  select(org_unit, site)
+
+prog_data <- clean_names(prog_data) %>% 
+    select(-numerator, -denominator, -factor, -divisor, -multiplier)
+  
+prog_data <- prog_data %>% 
+  rename(facility = organisation_unit)
+  
+
+prog_data$data <- sub(":.*", "_R", prog_data$data)
+
+prog_data$data <- sub(" Numerator_R", "_R", prog_data$data)
+
+
+prog_data_site <- prog_data %>% 
+  left_join(prog_site,
+            by = c("facility" = "org_unit"), relationship = "many-to-many")
+
+prog_data_site <- prog_data_site %>% 
+  rename(indicator = data)
+
+prog_data_site <- prog_data_site %>% 
+  mutate(
+    period = parse_date_time(period, orders = "b-y"),
+    month = month(period, label = TRUE, abbr = TRUE),
+    year = year(period)
+  )
+
+
+# Filter the data for the required period
+data_fil <- prog_data_site %>%
+  filter(period >= ymd("2023-10-01") & period <= ymd("2024-06-30"))
+
+
+data_fil_cum <- prog_data_site %>% 
+  filter(indicator == "TX_CURR_R" | indicator == "TX_PVLS_D_R",
+         month == "Jun")
+
+
+# Create summary values for each indicator
+data_sum <- data_fil %>%
+  group_by(indicator) %>%
+  summarise(total_value = sum(value, na.rm = TRUE))
+
+
+# Take out cumulative indicators: TX_CURR_R, TX_PVLS_D_R, and TX_PVLS_N_R
+data_sum <- data_sum %>% 
+  filter(!indicator %in% c("TX_CURR_R", "TX_PVLS_D_R", "TX_PVLS_N_R", "TX_TB_R"))
+
+
+# Create program area variable to facilitate join with target data set
+data_sum_r <- data_sum %>% 
+  mutate(prog_area = sub("_R", "", indicator))
+
+
+# Create summary values for each cumulative indicator
+data_sum_cum <- data_fil_cum %>%
+  group_by(indicator) %>%
+  summarise(total_value = sum(value, na.rm = TRUE))
+
+
+# Create program area variable to facilitate join with target data
+data_sum_cum_r <- data_sum_cum %>% 
+  mutate(prog_area = sub("_R$", "", indicator))
+
+
+# Change the PrEP target code names
+
+prog_targets <- prog_targets %>% 
+  mutate(target_code = str_replace(target_code,"^PREP_", "PrEP_"))
+
+
+
+# Create the program area variable in the target data set
+prog_targets_t <- prog_targets %>% 
+  mutate(prog_area = sub("_T$", "", target_code))
+
+
+
+```
+
+
+
+
+
+```{r}
+# Clean the viral load data
+
+vl_data <- clean_names(vl_data) %>% 
+  select(-numerator, -denominator, -factor, -divisor, -multiplier)
+
+vl_data <- vl_data %>%
+  rename(facility = organisation_unit)
+
+vl_data$data <- sub(":.*", "_R", vl_data$data)
+
+vl_data_site <- vl_data %>% 
+  left_join(prog_site,
+            by = c("facility" = "org_unit"), relationship = "many-to-many")
+
+vl_data_site <- vl_data_site %>%
+  mutate(
+    period = parse_date_time(period, orders = "b-y"),
+    month = month(period, label = TRUE, abbr = TRUE),
+    year = year(period)
+  )
+
+# Filter the data for June 2024
+
+vl_data_jun <- vl_data_site %>%
+  filter(period == ymd("2024-06-01"))
+
+# Create VL Summaries by Site: VL <50, VL 50-199, VL 200-999 to be categorized as suppressed and VL >1000 to be categorized as unsuppressed
+
+
+vl_cat <- vl_data_jun %>%
+  mutate(vl_category = case_when(
+    viral_load_result == "<50 c/ml" ~ "Suppressed",
+    viral_load_result == "50-199 c/ml" ~ "Suppressed",
+    viral_load_result == "200-999 c/ml" ~ "Suppressed",
+    viral_load_result == ">1000 c/ml" ~ "Unsuppressed"
+  ))
+
+# Determine Low Level Viraemia (LLV) defined as VL 50-999 c/ml
+
+vl_cat2 <- vl_cat %>%
+  mutate(vl_category = case_when(
+    viral_load_result == "50-199 c/ml" ~ "LLV",
+    viral_load_result == "200-999 c/ml" ~ "LLV",
+    TRUE ~ vl_category
+  ))
+
+# Sum of LLV
+
+vl_llv <- vl_cat2 %>%
+  filter(vl_category == "LLV") %>%
+  summarise(total_llv = sum(value, na.rm = TRUE)) %>%
+  pull(total_llv)
+
+# Sum of VL Result <50 c/ml
+
+vl_lt50 <- vl_cat2 %>% 
+  filter(viral_load_result == "<50 c/ml") %>% 
+  summarise(total_lt50 = sum(value, na.rm = TRUE)) %>% 
+  pull(total_lt50)
+
+# Summarize the value totals for vl_cat by site
+
+vl_summary <- vl_cat %>%
+  group_by(facility, vl_category) %>%
+  summarise(total_value = sum(value, na.rm = TRUE))
+
+
+# Pivot the vl_summary data with vl_category as columns and total_value as values
+
+vl_summary_pivot <- vl_summary %>%
+  pivot_wider(names_from = vl_category, values_from = total_value, values_fill = 0)
+
+# Create a column for total_vl for each site
+
+vl_summary_pivot <- vl_summary_pivot %>%
+  mutate(total_vl = Suppressed + Unsuppressed)
+
+
+# Calculate VL Suppression (vl_sup) by site: vl_sup = (Suppressed / total_vl) * 100
+
+vl_summary_pivot <- vl_summary_pivot %>%
+  mutate(vl_sup = (Suppressed / total_vl) * 100)
+
+# Calculate total VL suppression for the Program
+
+total_vl_sup <- vl_summary_pivot %>%
+  ungroup() %>% 
+  summarise(total_sup = sum(Suppressed, na.rm = TRUE)) %>% 
+  pull(total_sup)
+
+total_vld <- vl_summary_pivot %>%
+  ungroup() %>% 
+  summarise(total_vld = sum(total_vl, na.rm = TRUE)) %>% 
+  pull(total_vld) 
+
+prog_vl_sup <- vl_summary_pivot %>% 
+  ungroup() %>% 
+  summarise(vlsup = sum(Suppressed, na.rm = TRUE),
+            ttl_vl = sum(total_vl, na.rm = TRUE),
+            vlsup_rate = (vlsup / ttl_vl)
+            ) %>% 
+  pull(vlsup_rate)
+
+
+
+```
+
+```{r}
+# Add the data from data_sum_cum_r to data_sum_r
+
+data_sum_r <- data_sum_r %>% 
+  bind_rows(data_sum_cum_r)
+```
+
+
+
+
+```{r}
+# Calculate Program area performance (indicator value/target_code value)
+
+data_sum_new <- data_sum_r %>% 
+  left_join(prog_targets_t,
+            by = c("prog_area" = "prog_area"))
+
+data_sum_new <- data_sum_new %>% 
+ rename(result = total_value,
+        target_name = target,
+        target = value)
+
+
+# Calculate performance and cap at 1 (100%)
+data_sum_new <- data_sum_new %>%
+  mutate(performance = result / target,
+         color = case_when(
+           performance < 0.50 ~ "red",
+           performance >= 0.50 & performance < 0.80 ~ "yellow",
+           performance >= 0.80 & performance < 0.90 ~ "green3",
+           performance >= 0.90 ~ "darkgreen"
+         ),
+         text_color = ifelse(color == "yellow", "black", "white"))
+```
+
+
+
+```{r echo=FALSE, warning=FALSE, include=FALSE}
+# Create individual plots for each program area
+plot_list <- lapply(1:nrow(data_sum_new), function(i) {
+  data_i <- data_sum_new[i, ]
+  
+  # Program area title box
+  title_plot <- ggplot() +
+    geom_rect(aes(xmin = 0, xmax = 1, ymin = 0, ymax = 1), fill = "blue4") +
+    geom_text(aes(x = 0.5, y = 0.5, label = data_i$prog_area), color = "white", size = 3.5, fontface = "bold") +
+    theme_void()
+  
+  # Performance box
+  performance_plot <- ggplot(data_i, aes(x = 1, y = performance)) +
+    geom_rect(aes(xmin = 0, xmax = 1, ymin = 0, ymax = 1), fill = data_i$color) +
+    geom_text(aes(x = 0.5, y = 0.5, label = scales::percent(performance, accuracy = 1)), color = data_i$text_color, size = 4, fontface = "bold") +
+    theme_void()
+  
+  # Result box
+  result_plot <- ggplot(data_i) +
+    geom_rect(aes(xmin = 0, xmax = 1, ymin = 0, ymax = 1), fill="white") +
+    geom_segment(aes(x = 0, xend = 1, y = 0, yend = 0), color = "black")+
+    geom_text(aes(x = 0.5, y = 0.5, label = scales::comma(result)), color = "black", size = 4, vjust = 0.5, hjust = 0.5, fontface="bold") +
+    theme_void() 
+  
+  # Target box
+  target_plot <- ggplot(data_i) +
+    geom_rect(aes(xmin = 0, xmax = 1, ymin = 0, ymax = 1), fill = "white") +
+    geom_text(aes(x = 0.5, y = 0.5, label = scales::comma(target)), color = "black", size = 4, vjust = 0.5, hjust = 0.5, fontface = "bold") +
+    theme_void() 
+  
+  # Arrange the plots vertically
+  arrangeGrob(title_plot, performance_plot, result_plot, target_plot, ncol = 1, heights = c(1, 1, 1, 1))
+})
+
+
+
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+
+# Create individual values for each program area in the data_sum_new data set using the result variable
+
+hts_tst <- data_sum_new %>% 
+  filter(prog_area == "HTS_TST") %>% 
+  pull(result)
+
+hts_pos <- data_sum_new %>% 
+  filter(prog_area == "HTS_TST_POS") %>% 
+  pull(result)
+
+tx_new <- data_sum_new %>% 
+  filter(prog_area == "TX_NEW") %>% 
+  pull(result)
+
+tx_curr <- data_sum_new %>%
+  filter(prog_area == "TX_CURR") %>% 
+  pull(result)
+
+linkage <- tx_new/hts_pos
+
+tx_pvls_d <- data_sum_new %>%
+  filter(prog_area == "TX_PVLS_D") %>% 
+  pull(result)
+
+vls <- total_vl_sup/tx_pvls_d
+
+vlc <- tx_pvls_d/tx_curr
+
+vl_sup50 <- vl_lt50/tx_pvls_d
+
+
+
+  
+
+
+
+```
+
+
+
+# PROGRAM CASCADE
+
+##  {height="30%"}
+
+```{r} 
+# Set font color to white
+
+value_box(
+  title = tags$span("Total Testing", style = "font-size: 30px; color: white; font-weight:bold;"),
+  value = tags$span(scales::comma(hts_tst), style = "color: white; "),
+  showcase = tags$span(bsicons::bs_icon("droplet"), style = "color: white;"),
+  theme = value_box_theme(bg = "#0055cc")
+)
+```
+
+```{r}
+value_box(
+  title = tags$span("Total Positives", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::comma(hts_pos),
+  showcase = bsicons::bs_icon("plus-circle-fill"),
+  theme = value_box_theme(bg ="#8B0000")
+)
+```
+
+```{r}
+value_box(
+  title = tags$span("Total New on ART", style = "font-size: 30px; font-weight:bold;"),
+  value = scales::comma(tx_new),
+  showcase = bsicons::bs_icon("prescription"),
+  theme = value_box_theme(bg ="#518")
+)
+```
+
+```{r}
+value_box(
+  title = tags$span("Linkage to ART", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::percent(linkage),
+  showcase = bsicons::bs_icon("link-45deg"),
+  theme = value_box_theme(bg ="#006611")
+)
+```
+
+##  {height="30%"}
+
+```{r}
+value_box(
+  title = tags$span("Current on Treatment", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::comma(tx_curr),
+  showcase = bsicons::bs_icon("people"),
+  theme = value_box_theme(bg ="#002a2a")
+)
+```
+
+```{r}
+value_box(
+  title = tags$span("Had a Viral Load", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::comma(tx_pvls_d),
+  showcase = bsicons::bs_icon("virus"),
+  theme = value_box_theme(bg ="#004646")
+)
+```
+
+```{r}
+value_box(
+  title = tags$span("Total Suppressed", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::comma(total_vl_sup),
+  showcase = bsicons::bs_icon("chevron-double-down"),
+  theme = value_box_theme(bg ="#a9d0b8")
+)
+```
+
+##  {height="30%"}
+
+```{r}
+value_box(
+  title = tags$span("VL Coverage", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::percent(vlc),
+  showcase = bsicons::bs_icon("align-top"),
+  theme = value_box_theme(bg ="#93bdcf")
+)
+```
+
+```{r}
+value_box(
+  title = tags$span("VL Suppression", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::percent(vls),
+  showcase = bsicons::bs_icon("box-arrow-in-down-right"),
+  theme = value_box_theme(bg ="#0aff76")
+)
+```
+
+```{r}
+value_box(
+  title = tags$span("Undetectable VL <50 c/ml", style = "font-size: 30px;font-weight:bold;"),
+  value = scales::percent(vl_sup50),
+  showcase = bsicons::bs_icon("virus2"),
+  theme = value_box_theme(bg ="#cf402e")
+)
+```
+
+# Program Area Performance
+
+## Performance Summary {height=70%}
+
+```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE}
+# windows(width = 20, height = 10)
+grid.newpage()  # Clear the existing grid
+grid.draw(grid.arrange(grobs = plot_list, ncol = 5))
+```
+
+
