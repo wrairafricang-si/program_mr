@@ -1,0 +1,43 @@
+target,target_code,value
+CXCA_SCRN Target: Number of HIV-positive women on ART screened for cervical cancer,CXCA_SCRN_T,8080
+GEND_GBV Sub Target: Sexual Violence,GEND_GBV_SV_T,290
+GEND_GBV Target: Number of people receiving post-GBV clinical care based on the minimum package.,GEND_GBV_T,1367
+HTS_INDEX Target: Number of contacts of index clients tested for HIV,HTS_INDEX_T,7476
+HTS_INDEX_POS Target: Number of contacts of index clients who tested HIV-positive,HTS_INDEX_POS_T,801
+HTS_RECENT Target:  Number of newly diagnosed HIV-positive clients who received testing for recent infection with a documented result,HTS_RECENT_T,3654
+HTS_RECENT Target:  Number of newly diagnosed HIV-positive key populations who received testing for recent infection with a documented result,HTS_RECENT_KP_T,1402
+HTS_SELF Target:  Number of individual HIV self-test kits distributed among key populations,HTS_SELF_KP_T,3876
+HTS_SELF Target: Number of individual HIV self-test kits distributed,HTS_SELF_T,17952
+HTS_TST Target:  Number of individuals who received HIV Testing Services (HTS) for HIV and received their test results,HTS_TST_T,88836
+HTS_TST Target:  Number of key populations who received HIV Testing Services (HTS) for HIV and received their test results,HTS_TST_KP_T,28991
+HTS_TST_POS Target: Number of Individuals Who Tested Positive for HIV,HTS_TST_POS_T,3761
+HTS_TST_POS Target: Number of key populations Who Tested Positive for HIV,HTS_TST_POS_KP_T,1402
+KP_PREV Target: Number of key populations reached with individual and/or small group level HIV preventative interventions that are based on evidence and/or meet the minimum standards required,KP_PREV_T,35519
+PMTCT_ART Target: Number of HIV-positive pregnant women who received ART to reduce risk of mother-to-child-transmission during pregnancy,PMTCT_ART_T,680
+PMTCT_EID Target: Number of infants who had a virologic HIV test within 12 months of birth during the reporting period.,PMTCT_EID_T,758
+PMTCT_HEI_POS Target: Number of infants who had a positive virologic HIV test within 12 months of birth during the reporting period.,PMTCT_HEI_POS_T,8
+PMTCT_STAT_D Target: New ANC Attendees,PMTCT_STAT_D_T,20362
+PMTCT_STAT_N Target: Number of pregnant women with known HIV status (includes those who already knew their HIV status prior to ANC),PMTCT_STAT_T,20362
+PMTCT_STAT_POS (Known) Target: Number of pregnant women previously on ART,PMTCT_STAT_POS_Kn_T,626
+PMTCT_STAT_POS (Newly identified) Target: Number of newly tested positive pregnant women,PMTCT_STAT_POS_New_T,54
+PMTCT_STAT_POS Target: Total number of positive pregnant women,PMTCT_STAT_POS_T,680
+PrEP_CT Target (KP),PREP_CT_KP_T,1514
+PrEP_CT Target: Number of individuals that return for a follow-up visit or re-initiation visit for PrEP,PREP_CT_T,1635
+PrEP_NEW Target (KP),PREP_NEW_KP_T,5044
+PrEP_NEW Target: Number of individuals who were newly enrolled on oral antiretroviral pre-exposure prophylaxis (PrEP) to prevent HIV infection,PREP_NEW_T,5448
+TB_ART Target: Number of TB cases with documented HIV-positive status who start or continue ART during the reporting period,TB_ART_T,190
+TB_PREV Target: Already on ART,TB_PREV_AL_ART_T,50
+TB_PREV Target: New on ART,TB_PREV_N_ART_T,3218
+TB_PREV Target: Number of ART patients who started on a standard course of TB Preventive Treatment (TPT) in the previous reporting period who completed therapy,TB_PREV_T,3268
+TB_SCREEN_DX Target: The number of PLHIV who were screened for TB symptoms at the last clinical visit to an HIV care facility during the reporting period,TB_SCREEN_DX_T,44880
+TB_STAT Target: Number of new or relapsed TB cases with documented HIV status during the reporting period,TB_STAT_T,705
+TX_CURR Target: Number of adults and children currently receiving antiretroviral therapy (ART),TX_CURR_T,44776
+TX_CURR Target: Number of key populations currently receiving antiretroviral therapy (ART) (KP),TX_CURR_KP_T,7670
+TX_NEW Target: Number of adults and children newly enrolled on antiretroviral therapy (ART),TX_NEW_T,3687
+TX_PVLS_D Target,TX_PVLS_D_T,41581
+TX_PVLS - Had a Viral Load Target (KP),TX_PVLS_D_KP_T,7353
+TX_PVLS - Virally Suppressed Target (KP),TX_PVLS_N_KP_T,6986
+"TX_PVLS Target: Number of adult and pediatric patients on ART with suppressed viral load results (<1,000 copies/ml) documented in the medical records and/or supporting laboratory results within the past 12 months",TX_PVLS_N_T,39503
+TX_TB Target: Number of ART patients screened for TB in the semiannual reporting period who start TB treatment.,TX_TB_T,3637
+GEND_GBV Sub Target: Physical Violence,GEND_GBV_PV_T,1077
+TX_NEW Target: Number of key populations newly enrolled on antiretroviral therapy (ART),TX_NEW_KP_T,1375
