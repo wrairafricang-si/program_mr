@@ -286,8 +286,8 @@ data_sum_new <- data_sum_new %>%
   mutate(performance = result / target,
          color = case_when(
            performance < 0.50 ~ "red",
-           performance >= 0.50 & performance < 0.80 ~ "yellow",
-           performance >= 0.80 & performance < 0.90 ~ "green3",
+           performance >= 0.50 & performance < 0.75 ~ "yellow",
+           performance >= 0.75 & performance < 0.90 ~ "green3",
            performance >= 0.90 ~ "darkgreen"
          ),
          text_color = ifelse(color == "yellow", "black", "white"))
@@ -482,7 +482,7 @@ value_box(
 ```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE}
 # windows(width = 20, height = 10)
 grid.newpage()  # Clear the existing grid
-grid.draw(grid.arrange(grobs = plot_list, ncol = 5))
+grid.draw(grid.arrange(grobs = plot_list, ncol = 6))
 ```
 
 
