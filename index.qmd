@@ -1,5 +1,5 @@
 ---
-title: "WRAIR AFRICA NIGERIA DASHBOARD | JUNE 2024"
+title: "WRAIR AFRICA NIGERIA DASHBOARD | JULY 2024"
 format: dashboard
 theme: lux
 ---
@@ -48,11 +48,11 @@ pacman::p_load(tidyverse,
 ```{r message=FALSE}
 # Load the data
 
-prog_data <- read_csv("data/prog_data_jun24.csv")
+prog_data <- read_csv("data/prog_data_jul24.csv")
 
 prog_targets <- read_csv("data/fy24_targets.csv")
 
-vl_data <- read_csv("data/vl_data_jun24.csv")
+vl_data <- read_csv("data/vl_data_jul24.csv")
 
 prog_site <- read_csv("data/prog_sites.csv")
 
@@ -96,12 +96,12 @@ prog_data_site <- prog_data_site %>%
 
 # Filter the data for the required period
 data_fil <- prog_data_site %>%
-  filter(period >= ymd("2023-10-01") & period <= ymd("2024-06-30"))
+  filter(period >= ymd("2023-10-01") & period <= ymd("2024-07-31"))
 
 
 data_fil_cum <- prog_data_site %>% 
   filter(indicator == "TX_CURR_R" | indicator == "TX_PVLS_D_R",
-         month == "Jun")
+         month == "Jul")
 
 
 # Create summary values for each indicator
@@ -148,6 +148,18 @@ prog_targets_t <- prog_targets %>%
 
 
 
+```{r}
+# Sum of TX_NEW from Feb 2024 to Jul 2024
+
+tx_new_feb_jul <- data_fil %>% 
+  filter(indicator == "TX_NEW_R",year == 2024 & month %in% c("Feb", "Mar", "Apr", "May", "Jun", "Jul")) %>% 
+  summarise(total_tx_new = sum(value, na.rm = TRUE)) %>% 
+  pull(total_tx_new)
+
+```
+
+
+
 
 
 ```{r}
@@ -172,15 +184,15 @@ vl_data_site <- vl_data_site %>%
     year = year(period)
   )
 
-# Filter the data for June 2024
+# Filter the data for July 2024
 
-vl_data_jun <- vl_data_site %>%
-  filter(period == ymd("2024-06-01"))
+vl_data_jul <- vl_data_site %>%
+  filter(period == ymd("2024-07-01"))
 
 # Create VL Summaries by Site: VL <50, VL 50-199, VL 200-999 to be categorized as suppressed and VL >1000 to be categorized as unsuppressed
 
 
-vl_cat <- vl_data_jun %>%
+vl_cat <- vl_data_jul %>%
   mutate(vl_category = case_when(
     viral_load_result == "<50 c/ml" ~ "Suppressed",
     viral_load_result == "50-199 c/ml" ~ "Suppressed",
@@ -359,9 +371,11 @@ tx_pvls_d <- data_sum_new %>%
   filter(prog_area == "TX_PVLS_D") %>% 
   pull(result)
 
+eligible_vl <- tx_curr - tx_new_feb_jul
+
 vls <- total_vl_sup/tx_pvls_d
 
-vlc <- tx_pvls_d/tx_curr
+vlc <- tx_pvls_d/eligible_vl
 
 vl_sup50 <- vl_lt50/tx_pvls_d
 
@@ -479,7 +493,7 @@ value_box(
 
 ## Performance Summary {height=70%}
 
-```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE}
+```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE, title="PROGRAM AREA PERFORMANCE AGAINST TARGETS | OCTOBER 2023 - JULY 2024", height=600, width = 900}
 # windows(width = 20, height = 10)
 grid.newpage()  # Clear the existing grid
 grid.draw(grid.arrange(grobs = plot_list, ncol = 6))
