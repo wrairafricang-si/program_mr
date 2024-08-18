@@ -238,8 +238,8 @@ vl_plot_male <- vl_plot %>% filter(sex == "Male")
 vlc_male <- ggplot(vl_plot_male, aes(x = age_group)) +
  # geom_bar(aes(y = vl_elig, fill = "vl_elig"), stat = "identity", position = position_dodge(width = 0.6), width = 0.4) +
   geom_bar(aes(y = TX_PVLS_D, fill = "TX_PVLS_D"), stat = "identity", position = position_dodge(width = 0.6), width = 0.8) +
-  geom_point(aes(y = vl_cov_scaled), size = 4, color = "cyan4", position = position_dodge(width = 0.4)) +
-  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color ="cyan4", fontface ="bold") +
+  geom_point(aes(y = vl_cov_scaled), size = 5, color = "#e30003", position = position_dodge(width = 0.4)) +
+  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color ="cyan4", fontface ="bold", size = 4) +
   scale_y_continuous(
     name = "Counts",
     labels = label_comma(),  # Format the y-axis with commas
@@ -252,7 +252,7 @@ vlc_male <- ggplot(vl_plot_male, aes(x = age_group)) +
   ) +
   scale_fill_manual(
     name = "",
-    values = c("vl_elig" = "blue", "TX_PVLS_D" = "red4")
+    values = c("vl_elig" = "blue", "TX_PVLS_D" = "#104c77")
   ) +
   theme_minimal() +
   theme(
@@ -268,8 +268,8 @@ vl_plot_female <- vl_plot %>% filter(sex == "Female")
 vlc_fem <- ggplot(vl_plot_female, aes(x = age_group)) +
   #geom_bar(aes(y = vl_elig, fill = "vl_elig"), stat = "identity", position = position_dodge(width = 0.6), width = 0.4) +
   geom_bar(aes(y = TX_PVLS_D, fill = "TX_PVLS_D"), stat = "identity", position = position_dodge(width = 0.6), width = 0.8) +
-  geom_point(aes(y = vl_cov_scaled), size = 4, color ="cyan4", position = position_dodge(width = 0.4)) +
-  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color = "cyan4", fontface="bold") +
+  geom_point(aes(y = vl_cov_scaled), size = 5, color ="#104c77", position = position_dodge(width = 0.4)) +
+  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color = "cyan4", fontface="bold", size = 4) +
   scale_y_continuous(
     name = "Counts",
     labels = label_comma(),  # Format the y-axis with commas
@@ -282,7 +282,7 @@ vlc_fem <- ggplot(vl_plot_female, aes(x = age_group)) +
   ) +
   scale_fill_manual(
     name = "",
-    values = c("vl_elig" = "blue", "TX_PVLS_D" = "red4")
+    values = c("vl_elig" = "blue", "TX_PVLS_D" = "#e30003")
   ) +
   theme_minimal() +
   theme(
