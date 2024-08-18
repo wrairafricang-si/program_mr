@@ -2,6 +2,7 @@
 title: "WRAIR AFRICA NIGERIA DASHBOARD | JULY 2024"
 format: dashboard
 theme: lux
+css: style.css
 ---
 
 
@@ -238,8 +239,8 @@ vl_plot_male <- vl_plot %>% filter(sex == "Male")
 vlc_male <- ggplot(vl_plot_male, aes(x = age_group)) +
  # geom_bar(aes(y = vl_elig, fill = "vl_elig"), stat = "identity", position = position_dodge(width = 0.6), width = 0.4) +
   geom_bar(aes(y = TX_PVLS_D, fill = "TX_PVLS_D"), stat = "identity", position = position_dodge(width = 0.6), width = 0.8) +
-  geom_point(aes(y = vl_cov_scaled), size = 5, color = "#e30003", position = position_dodge(width = 0.4)) +
-  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color ="cyan4", fontface ="bold", size = 4) +
+  geom_point(aes(y = vl_cov_scaled), size = 6, color = "#e30003", position = position_dodge(width = 0.4)) +
+  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color ="cyan4", fontface ="bold", size = 6) +
   scale_y_continuous(
     name = "Counts",
     labels = label_comma(),  # Format the y-axis with commas
@@ -259,7 +260,9 @@ vlc_male <- ggplot(vl_plot_male, aes(x = age_group)) +
     axis.title.y.right = element_text(color = "black"),  # Color secondary axis label
     legend.position = "bottom",
     panel.grid.major = element_blank(),  # Remove major grid lines
-    panel.grid.minor = element_blank()   # Remove minor grid lines
+    panel.grid.minor = element_blank(), # Remove minor grid lines
+    axis.text.x = element_text(size = 14), # Adjust x-axis font size
+    axis.text.y = element_text(size = 14) # Adjust y-axis font size
   )
 
 # Plot for Female
@@ -268,8 +271,8 @@ vl_plot_female <- vl_plot %>% filter(sex == "Female")
 vlc_fem <- ggplot(vl_plot_female, aes(x = age_group)) +
   #geom_bar(aes(y = vl_elig, fill = "vl_elig"), stat = "identity", position = position_dodge(width = 0.6), width = 0.4) +
   geom_bar(aes(y = TX_PVLS_D, fill = "TX_PVLS_D"), stat = "identity", position = position_dodge(width = 0.6), width = 0.8) +
-  geom_point(aes(y = vl_cov_scaled), size = 5, color ="#104c77", position = position_dodge(width = 0.4)) +
-  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color = "cyan4", fontface="bold", size = 4) +
+  geom_point(aes(y = vl_cov_scaled), size = 6, color ="#104c77", position = position_dodge(width = 0.4)) +
+  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color = "cyan4", fontface="bold", size = 6) +
   scale_y_continuous(
     name = "Counts",
     labels = label_comma(),  # Format the y-axis with commas
@@ -289,7 +292,9 @@ vlc_fem <- ggplot(vl_plot_female, aes(x = age_group)) +
     axis.title.y.right = element_text(color = "black"),  # Color secondary axis label
     legend.position = "bottom",
     panel.grid.major = element_blank(),  # Remove major grid lines
-    panel.grid.minor = element_blank()   # Remove minor grid lines
+    panel.grid.minor = element_blank(),   # Remove minor grid lines
+    axis.text.x = element_text(size = 14), # Adjust x-axis font size
+    axis.text.y = element_text(size = 14)  # Adjust y-axis font size
   )
 
 ```
@@ -537,6 +542,39 @@ vl_sup50 <- vl_lt50/tx_pvls_d
 
 
 
+```{r}
+# Cervical Cancer Screening
+
+# Create the dataframe
+cervical_cancer_screening <- data.frame(
+  Outcome = c("Negative", "Positive", "Suspected Cancer"),
+  Count = c(4329, 82, 35)
+)
+
+# Calculate proportions
+cervical_cancer_screening$Proportion <- round(cervical_cancer_screening$Count / sum(cervical_cancer_screening$Count) * 100, 1)
+
+# Create the pie chart
+
+ccs <- ggplot(cervical_cancer_screening, aes(x = "", y = Count, fill = Outcome)) +
+  geom_bar(stat = "identity", width = 2) +
+  coord_polar("y", start = 0) +
+  # Remove geom_text from inside the pie chart
+  # Add geom_text for outside labels
+  geom_text(aes(label = paste0(Proportion, "%"), 
+                x = 1.3),  # Adjust x for label position
+            position = position_stack(vjust = 0.5),
+            size = 8, fontface="bold") +
+  labs(
+       fill = "Outcome") +
+  theme_void() +
+  scale_fill_brewer(palette = "Set3") +
+  # Adjust legend text size
+  theme(legend.text = element_text(size = 30)) # Change 12 to your desired size
+
+```
+
+
 # PROGRAM CASCADE FY24
 
 ##  {height="30%"}
@@ -637,25 +675,32 @@ value_box(
 )
 ```
 
-# Program Area Performance
+# Program Performance
 
-## Performance Summary {height=70%}
+## Performance Summary
 
-### {width=50%}
+### {width=45%}
 
-```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE, title="PROGRAM AREA PERFORMANCE AGAINST TARGETS | OCTOBER 2023 - JULY 2024", height=600, width = 900}
+```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE, title="PROGRAM AREA PERFORMANCE AGAINST TARGETS | OCTOBER 2023 - JULY 2024", height=550, width = 800}
 # windows(width = 20, height = 10)
 grid.newpage()  # Clear the existing grid
 grid.draw(grid.arrange(grobs = plot_list, ncol = 6))
 ```
 
-### Viral Load Coverage by Age Group {width=50%}
+```{r title = "CERVICAL CANCER SCREENING OUTCOMES"}
+ccs
+```
 
-```{r title = "VIRAL LOAD COVERAGE AMONG MALES"}
+
+### Viral Load Coverage by Age Group {width=55%}
+
+```{r title = "VIRAL LOAD COVERAGE AMONG MALES", fig.width=15, fig.height=6}
+
 vlc_male
 ```
 
-```{r title = "VIRAL LOAD COVERAGE AMONG FEMALES"}
+```{r title = "VIRAL LOAD COVERAGE AMONG FEMALES", fig.width=15, fig.height=6}
+# windows (width = 20, height = 10)
 vlc_fem
 ```
 
