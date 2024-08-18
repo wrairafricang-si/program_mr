@@ -1,0 +1,878 @@
+Data,Period,Sex,Age MER 2.6 Regrouped 50+,Value,Numerator,Denominator,Factor,Multiplier,Divisor
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,<1,5,5,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,01-Apr,60,60,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,05-Sep,119,119,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,Oct-14,297,297,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,15-19,565,565,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,20-24,1499,1499,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,25-29,1924,1924,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,30-34,1543,1543,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,35-39,1730,1730,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,40-44,2066,2066,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,45-49,2258,2258,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Male,50+,4233,4233,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,<1,6,6,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,01-Apr,56,56,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,05-Sep,173,173,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,Oct-14,293,293,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,15-19,498,498,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,20-24,1052,1052,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,25-29,2016,2016,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,30-34,3304,3304,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,35-39,4873,4873,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,40-44,4948,4948,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,45-49,3593,3593,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Oct-23,Female,50+,4502,4502,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,<1,5,5,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,01-Apr,60,60,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,05-Sep,118,118,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,Oct-14,302,302,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,15-19,568,568,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,20-24,1533,1533,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,25-29,1957,1957,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,30-34,1561,1561,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,35-39,1744,1744,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,40-44,2071,2071,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,45-49,2263,2263,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Male,50+,4228,4228,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,<1,6,6,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,01-Apr,58,58,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,05-Sep,173,173,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,Oct-14,294,294,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,15-19,504,504,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,20-24,1076,1076,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,25-29,2029,2029,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,30-34,3316,3316,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,35-39,4885,4885,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,40-44,4973,4973,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,45-49,3594,3594,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Nov-23,Female,50+,4525,4525,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,<1,1,1,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,01-Apr,30,30,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,05-Sep,83,83,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,Oct-14,231,231,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,15-19,352,352,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,20-24,849,849,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,25-29,1319,1319,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,30-34,1375,1375,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,35-39,1439,1439,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,40-44,1810,1810,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,45-49,2087,2087,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Male,50+,4598,4598,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,<1,1,1,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,01-Apr,31,31,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,05-Sep,79,79,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,Oct-14,224,224,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,15-19,328,328,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,20-24,761,761,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,25-29,1213,1213,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,30-34,2240,2240,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,35-39,4038,4038,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,40-44,4778,4778,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,45-49,3746,3746,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Dec-23,Female,50+,4989,4989,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,<1,4,4,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,01-Apr,39,39,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,05-Sep,103,103,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,Oct-14,255,255,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,15-19,493,493,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,20-24,945,945,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,25-29,1417,1417,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,30-34,1346,1346,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,35-39,1540,1540,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,40-44,1878,1878,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,45-49,2163,2163,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Male,50+,4472,4472,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,<1,2,2,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,01-Apr,39,39,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,05-Sep,97,97,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,Oct-14,253,253,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,15-19,428,428,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,20-24,834,834,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,25-29,1519,1519,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,30-34,2526,2526,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,35-39,4330,4330,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,40-44,4822,4822,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,45-49,3656,3656,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jan-24,Female,50+,4913,4913,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,<1,4,4,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,01-Apr,42,42,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,05-Sep,102,102,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,Oct-14,259,259,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,15-19,471,471,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,20-24,904,904,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,25-29,1358,1358,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,30-34,1296,1296,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,35-39,1515,1515,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,40-44,1869,1869,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,45-49,2136,2136,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Male,50+,4449,4449,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,<1,2,2,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,01-Apr,42,42,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,05-Sep,95,95,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,Oct-14,257,257,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,15-19,410,410,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,20-24,803,803,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,25-29,1491,1491,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,30-34,2473,2473,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,35-39,4285,4285,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,40-44,4820,4820,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,45-49,3648,3648,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Feb-24,Female,50+,4920,4920,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,<1,2,2,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,01-Apr,31,31,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,05-Sep,84,84,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,Oct-14,230,230,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,15-19,366,366,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,20-24,828,828,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,25-29,1316,1316,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,30-34,1357,1357,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,35-39,1414,1414,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,40-44,1808,1808,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,45-49,2126,2126,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Male,50+,4758,4758,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,<1,2,2,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,01-Apr,32,32,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,05-Sep,81,81,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,Oct-14,236,236,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,15-19,311,311,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,20-24,734,734,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,25-29,1209,1209,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,30-34,2228,2228,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,35-39,4023,4023,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,40-44,4906,4906,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,45-49,3922,3922,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Mar-24,Female,50+,5189,5189,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,<1,3,3,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,01-Apr,37,37,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,05-Sep,88,88,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,Oct-14,242,242,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,15-19,383,383,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,20-24,832,832,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,25-29,1292,1292,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,30-34,1355,1355,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,35-39,1399,1399,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,40-44,1829,1829,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,45-49,2134,2134,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Male,50+,4715,4715,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,<1,3,3,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,01-Apr,36,36,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,05-Sep,87,87,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,Oct-14,237,237,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,15-19,330,330,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,20-24,724,724,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,25-29,1296,1296,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,30-34,2250,2250,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,35-39,4036,4036,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,40-44,4851,4851,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,45-49,3900,3900,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Apr-24,Female,50+,5142,5142,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,<1,6,6,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,01-Apr,36,36,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,05-Sep,84,84,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,Oct-14,240,240,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,15-19,369,369,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,20-24,874,874,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,25-29,1445,1445,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,30-34,1421,1421,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,35-39,1443,1443,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,40-44,1853,1853,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,45-49,2119,2119,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Male,50+,4727,4727,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,<1,3,3,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,01-Apr,36,36,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,05-Sep,84,84,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,Oct-14,234,234,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,15-19,331,331,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,20-24,766,766,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,25-29,1347,1347,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,30-34,2325,2325,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,35-39,4109,4109,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,40-44,4922,4922,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,45-49,3958,3958,1,1,1,1
+TX_CURR: Total Patients Currently on ART,May-24,Female,50+,5196,5196,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,<1,4,4,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,01-Apr,30,30,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,05-Sep,73,73,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,Oct-14,231,231,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,15-19,366,366,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,20-24,859,859,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,25-29,1437,1437,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,30-34,1424,1424,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,35-39,1400,1400,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,40-44,1819,1819,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,45-49,2097,2097,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Male,50+,4812,4812,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,<1,3,3,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,01-Apr,23,23,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,05-Sep,85,85,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,Oct-14,231,231,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,15-19,325,325,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,20-24,738,738,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,25-29,1263,1263,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,30-34,2273,2273,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,35-39,4062,4062,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,40-44,4923,4923,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,45-49,4042,4042,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jun-24,Female,50+,5355,5355,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,<1,5,5,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,01-Apr,34,34,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,05-Sep,71,71,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,Oct-14,224,224,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,15-19,345,345,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,20-24,917,917,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,25-29,1473,1473,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,30-34,1432,1432,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,35-39,1404,1404,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,40-44,1831,1831,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,45-49,2116,2116,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Male,50+,4809,4809,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,<1,3,3,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,01-Apr,23,23,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,05-Sep,80,80,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,Oct-14,228,228,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,15-19,346,346,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,20-24,759,759,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,25-29,1313,1313,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,30-34,2296,2296,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,35-39,4074,4074,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,40-44,4982,4982,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,45-49,4069,4069,1,1,1,1
+TX_CURR: Total Patients Currently on ART,Jul-24,Female,50+,5421,5421,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,Oct-14,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,15-19,11,11,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,20-24,29,29,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,25-29,30,30,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,30-34,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,35-39,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,40-44,18,18,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,45-49,21,21,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Male,50+,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,Oct-14,4,4,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,15-19,6,6,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,20-24,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,25-29,20,20,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,30-34,20,20,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,35-39,33,33,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,40-44,13,13,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,45-49,16,16,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Oct-23,Female,50+,11,11,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,Oct-14,3,3,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,15-19,3,3,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,20-24,33,33,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,25-29,34,34,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,30-34,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,35-39,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,40-44,19,19,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,45-49,6,6,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Male,50+,16,16,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,01-Apr,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,05-Sep,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,15-19,5,5,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,20-24,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,25-29,25,25,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,30-34,24,24,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,35-39,27,27,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,40-44,25,25,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,45-49,11,11,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Nov-23,Female,50+,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,05-Sep,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,15-19,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,20-24,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,25-29,11,11,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,30-34,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,35-39,11,11,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,40-44,16,16,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,45-49,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Male,50+,11,11,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,Oct-14,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,15-19,6,6,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,20-24,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,25-29,13,13,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,30-34,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,35-39,18,18,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,40-44,13,13,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,45-49,3,3,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Dec-23,Female,50+,7,7,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,<1,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,01-Apr,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,15-19,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,20-24,19,19,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,25-29,27,27,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,30-34,20,20,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,35-39,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,40-44,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,45-49,16,16,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Male,50+,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,05-Sep,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,Oct-14,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,15-19,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,20-24,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,25-29,21,21,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,30-34,30,30,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,35-39,27,27,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,40-44,23,23,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,45-49,8,8,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jan-24,Female,50+,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,<1,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,01-Apr,3,3,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,Oct-14,4,4,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,15-19,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,20-24,28,28,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,25-29,23,23,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,30-34,27,27,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,35-39,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,40-44,17,17,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,45-49,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Male,50+,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,<1,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,Oct-14,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,15-19,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,20-24,24,24,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,25-29,26,26,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,30-34,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,35-39,30,30,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,40-44,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,45-49,11,11,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Feb-24,Female,50+,18,18,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,Oct-14,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,15-19,4,4,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,20-24,37,37,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,25-29,59,59,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,30-34,41,41,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,35-39,24,24,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,40-44,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,45-49,9,9,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Male,50+,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,<1,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,05-Sep,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,15-19,9,9,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,20-24,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,25-29,30,30,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,30-34,26,26,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,35-39,32,32,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,40-44,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,45-49,18,18,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Mar-24,Female,50+,24,24,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,05-Sep,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,Oct-14,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,15-19,8,8,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,20-24,33,33,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,25-29,43,43,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,30-34,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,35-39,18,18,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,40-44,23,23,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,45-49,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Male,50+,13,13,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,Oct-14,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,15-19,9,9,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,20-24,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,25-29,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,30-34,21,21,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,35-39,19,19,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,40-44,27,27,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,45-49,19,19,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Apr-24,Female,50+,16,16,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,<1,3,3,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,15-19,3,3,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,20-24,36,36,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,25-29,54,54,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,30-34,29,29,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,35-39,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,40-44,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,45-49,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Male,50+,9,9,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,Oct-14,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,15-19,4,4,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,20-24,28,28,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,25-29,35,35,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,30-34,30,30,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,35-39,45,45,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,40-44,41,41,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,45-49,17,17,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),May-24,Female,50+,14,14,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,05-Sep,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,Oct-14,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,15-19,5,5,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,20-24,60,60,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,25-29,78,78,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,30-34,42,42,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,35-39,25,25,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,40-44,24,24,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,45-49,12,12,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Male,50+,9,9,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,Oct-14,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,15-19,5,5,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,20-24,41,41,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,25-29,45,45,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,30-34,45,45,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,35-39,48,48,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,40-44,30,30,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,45-49,21,21,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jun-24,Female,50+,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,<1,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,01-Apr,1,1,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,15-19,4,4,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,20-24,55,55,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,25-29,58,58,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,30-34,39,39,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,35-39,27,27,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,40-44,22,22,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,45-49,10,10,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Male,50+,15,15,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,Oct-14,2,2,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,15-19,5,5,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,20-24,19,19,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,25-29,30,30,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,30-34,29,29,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,35-39,38,38,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,40-44,27,27,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,45-49,20,20,1,1,1,1
+TX_NEW: Newly Initiated on ART (Including KP),Jul-24,Female,50+,16,16,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,01-Apr,30,30,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,05-Sep,113,113,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,Oct-14,240,240,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,15-19,382,382,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,20-24,939,939,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,25-29,1408,1408,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,30-34,1327,1327,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,35-39,1514,1514,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,40-44,1890,1890,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,45-49,2003,2003,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Male,50+,3948,3948,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,<1,1,1,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,01-Apr,32,32,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,05-Sep,114,114,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,Oct-14,249,249,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,15-19,373,373,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,20-24,780,780,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,25-29,1434,1434,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,30-34,2338,2338,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,35-39,3894,3894,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,40-44,4552,4552,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,45-49,3452,3452,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Oct-23,Female,50+,4635,4635,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,01-Apr,39,39,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,05-Sep,116,116,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,Oct-14,261,261,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,15-19,386,386,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,20-24,903,903,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,25-29,1349,1349,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,30-34,1331,1331,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,35-39,1607,1607,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,40-44,2148,2148,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,45-49,2275,2275,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Male,50+,4443,4443,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,<1,1,1,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,01-Apr,32,32,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,05-Sep,114,114,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,Oct-14,247,247,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,15-19,356,356,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,20-24,753,753,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,25-29,1379,1379,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,30-34,2223,2223,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,35-39,3749,3749,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,40-44,4271,4271,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,45-49,3188,3188,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Nov-23,Female,50+,4301,4301,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,01-Apr,21,21,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,05-Sep,75,75,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,Oct-14,190,190,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,15-19,270,270,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,20-24,521,521,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,25-29,858,858,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,30-34,935,935,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,35-39,1093,1093,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,40-44,1441,1441,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,45-49,1724,1724,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Male,50+,3990,3990,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,01-Apr,26,26,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,05-Sep,71,71,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,Oct-14,197,197,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,15-19,265,265,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,20-24,486,486,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,25-29,891,891,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,30-34,1732,1732,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,35-39,3308,3308,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,40-44,4062,4062,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,45-49,3230,3230,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Dec-23,Female,50+,4311,4311,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,01-Apr,30,30,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,05-Sep,95,95,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,Oct-14,240,240,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,15-19,372,372,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,20-24,886,886,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,25-29,1253,1253,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,30-34,1214,1214,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,35-39,1379,1379,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,40-44,1752,1752,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,45-49,1885,1885,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Male,50+,3884,3884,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,01-Apr,29,29,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,05-Sep,102,102,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,Oct-14,241,241,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,15-19,346,346,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,20-24,696,696,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,25-29,1350,1350,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,30-34,2180,2180,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,35-39,3670,3670,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,40-44,4414,4414,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,45-49,3375,3375,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jan-24,Female,50+,4671,4671,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,01-Apr,32,32,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,05-Sep,93,93,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,Oct-14,231,231,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,15-19,347,347,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,20-24,739,739,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,25-29,1003,1003,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,30-34,1050,1050,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,35-39,1290,1290,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,40-44,1707,1707,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,45-49,1828,1828,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Male,50+,3867,3867,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,01-Apr,26,26,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,05-Sep,92,92,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,Oct-14,244,244,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,15-19,342,342,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,20-24,657,657,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,25-29,1243,1243,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,30-34,2059,2059,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,35-39,3619,3619,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,40-44,4279,4279,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,45-49,3306,3306,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Feb-24,Female,50+,4603,4603,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,<1,1,1,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,01-Apr,19,19,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,05-Sep,72,72,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,Oct-14,188,188,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,15-19,293,293,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,20-24,534,534,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,25-29,809,809,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,30-34,896,896,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,35-39,1021,1021,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,40-44,1348,1348,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,45-49,1676,1676,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Male,50+,3910,3910,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,01-Apr,21,21,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,05-Sep,70,70,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,Oct-14,203,203,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,15-19,257,257,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,20-24,493,493,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,25-29,869,869,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,30-34,1695,1695,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,35-39,3242,3242,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,40-44,3953,3953,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,45-49,3238,3238,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Mar-24,Female,50+,4287,4287,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,01-Apr,33,33,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,05-Sep,85,85,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,Oct-14,228,228,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,15-19,276,276,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,20-24,429,429,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,25-29,566,566,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,30-34,724,724,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,35-39,1228,1228,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,40-44,1569,1569,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,45-49,1774,1774,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Male,50+,3916,3916,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,<1,4,4,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,01-Apr,29,29,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,05-Sep,84,84,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,Oct-14,207,207,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,15-19,292,292,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,20-24,502,502,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,25-29,967,967,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,30-34,1799,1799,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,35-39,3194,3194,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,40-44,4120,4120,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,45-49,3328,3328,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Apr-24,Female,50+,4674,4674,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,<1,1,1,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,01-Apr,32,32,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,05-Sep,83,83,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,Oct-14,230,230,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,15-19,298,298,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,20-24,506,506,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,25-29,778,778,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,30-34,918,918,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,35-39,1177,1177,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,40-44,1623,1623,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,45-49,1831,1831,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Male,50+,4080,4080,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,01-Apr,28,28,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,05-Sep,90,90,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,Oct-14,222,222,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,15-19,324,324,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,20-24,527,527,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,25-29,1042,1042,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,30-34,1951,1951,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,35-39,3523,3523,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,40-44,4314,4314,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,45-49,3483,3483,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,May-24,Female,50+,4849,4849,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,01-Apr,18,18,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,05-Sep,72,72,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,Oct-14,199,199,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,15-19,307,307,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,20-24,555,555,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,25-29,916,916,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,30-34,997,997,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,35-39,1096,1096,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,40-44,1504,1504,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,45-49,1823,1823,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Male,50+,4353,4353,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,01-Apr,16,16,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,05-Sep,81,81,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,Oct-14,202,202,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,15-19,276,276,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,20-24,506,506,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,25-29,992,992,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,30-34,1836,1836,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,35-39,3483,3483,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,40-44,4304,4304,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,45-49,3600,3600,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jun-24,Female,50+,4825,4825,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,01-Apr,30,30,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,05-Sep,77,77,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,Oct-14,211,211,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,15-19,309,309,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,20-24,483,483,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,25-29,900,900,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,30-34,1004,1004,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,35-39,1191,1191,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,40-44,1615,1615,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,45-49,1852,1852,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Male,50+,4190,4190,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,01-Apr,30,30,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,05-Sep,85,85,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,Oct-14,233,233,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,15-19,305,305,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,20-24,555,555,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,25-29,1044,1044,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,30-34,1957,1957,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,35-39,3542,3542,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,40-44,4246,4246,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,45-49,3344,3344,1,1,1,1
+TX_PVLS_D: Had a Viral Load Result,Jul-24,Female,50+,4932,4932,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,01-Apr,4,4,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,05-Sep,6,6,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,Oct-14,15,15,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,15-19,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,20-24,19,19,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,25-29,25,25,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,30-34,25,25,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,35-39,28,28,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,40-44,34,34,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,45-49,37,37,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Male,50+,63,63,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,05-Sep,3,3,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,Oct-14,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,15-19,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,20-24,18,18,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,25-29,20,20,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,30-34,37,37,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,35-39,69,69,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,40-44,66,66,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,45-49,42,42,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Oct-23,Female,50+,50,50,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,01-Apr,6,6,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,05-Sep,6,6,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,Oct-14,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,15-19,13,13,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,20-24,19,19,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,25-29,18,18,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,30-34,27,27,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,35-39,24,24,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,40-44,33,33,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,45-49,36,36,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Male,50+,59,59,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,05-Sep,3,3,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,Oct-14,10,10,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,15-19,6,6,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,20-24,19,19,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,25-29,20,20,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,30-34,34,34,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,35-39,64,64,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,40-44,71,71,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,45-49,43,43,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Nov-23,Female,50+,50,50,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,01-Apr,3,3,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,05-Sep,4,4,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,Oct-14,5,5,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,15-19,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,20-24,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,25-29,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,30-34,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,35-39,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,40-44,25,25,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,45-49,24,24,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Male,50+,50,50,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,01-Apr,1,1,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,Oct-14,7,7,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,15-19,13,13,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,20-24,15,15,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,25-29,9,9,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,30-34,16,16,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,35-39,42,42,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,40-44,49,49,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,45-49,30,30,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Dec-23,Female,50+,45,45,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,01-Apr,5,5,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,05-Sep,5,5,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,Oct-14,9,9,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,15-19,15,15,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,20-24,20,20,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,25-29,18,18,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,30-34,19,19,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,35-39,21,21,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,40-44,34,34,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,45-49,31,31,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Male,50+,55,55,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,01-Apr,1,1,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,05-Sep,3,3,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,Oct-14,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,15-19,10,10,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,20-24,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,25-29,18,18,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,30-34,34,34,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,35-39,60,60,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,40-44,59,59,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,45-49,43,43,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jan-24,Female,50+,55,55,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,01-Apr,5,5,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,05-Sep,6,6,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,Oct-14,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,15-19,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,20-24,19,19,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,25-29,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,30-34,15,15,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,35-39,19,19,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,40-44,28,28,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,45-49,33,33,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Male,50+,57,57,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,01-Apr,1,1,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,05-Sep,1,1,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,Oct-14,9,9,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,15-19,6,6,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,20-24,17,17,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,25-29,17,17,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,30-34,31,31,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,35-39,56,56,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,40-44,58,58,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,45-49,42,42,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Feb-24,Female,50+,58,58,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,01-Apr,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,05-Sep,4,4,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,Oct-14,6,6,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,15-19,10,10,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,20-24,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,25-29,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,30-34,10,10,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,35-39,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,40-44,26,26,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,45-49,23,23,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Male,50+,60,60,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,01-Apr,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,Oct-14,4,4,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,15-19,9,9,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,20-24,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,25-29,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,30-34,28,28,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,35-39,53,53,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,40-44,57,57,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,45-49,39,39,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Mar-24,Female,50+,57,57,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,01-Apr,5,5,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,05-Sep,3,3,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,Oct-14,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,15-19,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,20-24,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,25-29,9,9,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,30-34,15,15,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,35-39,22,22,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,40-44,29,29,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,45-49,26,26,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Male,50+,63,63,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,01-Apr,1,1,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,05-Sep,1,1,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,Oct-14,7,7,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,15-19,10,10,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,20-24,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,25-29,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,30-34,33,33,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,35-39,62,62,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,40-44,62,62,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,45-49,46,46,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Apr-24,Female,50+,62,62,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,01-Apr,4,4,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,05-Sep,3,3,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,Oct-14,13,13,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,15-19,7,7,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,20-24,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,25-29,16,16,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,30-34,19,19,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,35-39,25,25,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,40-44,29,29,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,45-49,30,30,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Male,50+,71,71,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,01-Apr,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,05-Sep,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,Oct-14,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,15-19,15,15,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,20-24,13,13,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,25-29,18,18,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,30-34,28,28,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,35-39,58,58,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,40-44,65,65,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,45-49,38,38,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),May-24,Female,50+,56,56,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,01-Apr,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,Oct-14,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,15-19,13,13,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,20-24,7,7,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,25-29,12,12,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,30-34,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,35-39,17,17,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,40-44,22,22,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,45-49,24,24,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Male,50+,66,66,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,01-Apr,1,1,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,Oct-14,5,5,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,15-19,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,20-24,9,9,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,25-29,15,15,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,30-34,23,23,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,35-39,49,49,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,40-44,50,50,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,45-49,47,47,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jun-24,Female,50+,49,49,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,01-Apr,3,3,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,05-Sep,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,Oct-14,9,9,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,15-19,17,17,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,20-24,8,8,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,25-29,14,14,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,30-34,20,20,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,35-39,21,21,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,40-44,26,26,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,45-49,27,27,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Male,50+,66,66,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,01-Apr,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,05-Sep,2,2,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,Oct-14,10,10,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,15-19,11,11,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,20-24,10,10,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,25-29,16,16,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,30-34,25,25,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,35-39,44,44,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,40-44,57,57,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,45-49,44,44,1,1,1,1
+TX_PVLS_N: Suppressed (<1000 c/ml),Jul-24,Female,50+,55,55,1,1,1,1
