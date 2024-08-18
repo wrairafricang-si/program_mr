@@ -56,6 +56,8 @@ vl_data <- read_csv("data/vl_data_jul24.csv")
 
 prog_site <- read_csv("data/prog_sites.csv")
 
+vl_casc <- read_csv("data/vl_data_agesex_jul24.csv")
+
 
 ```
 
@@ -149,12 +151,161 @@ prog_targets_t <- prog_targets %>%
 
 
 ```{r}
-# Sum of TX_NEW from Feb 2024 to Jul 2024
+# Clean the vl_casc data
+
+vl_casc <- clean_names(vl_casc) %>% 
+  select(-numerator, -denominator, -factor, -divisor, -multiplier)
+
+# Remove all the text after the colon in the indicator names under the data column
+vl_casc$data <- sub(":.*", "", vl_casc$data)
+
+# Parse the date column
+vl_casc <- vl_casc %>% 
+  mutate(
+    period = parse_date_time(period, orders = "b-y"),
+    month = month(period, label = TRUE, abbr = TRUE),
+    year = year(period)
+  )
+
+# clean the age group column
+vl_casc <- vl_casc %>%
+  rename(age_group = age_mer_2_6_regrouped_50) %>%
+  mutate(
+    age_group = 
+      case_when(age_group == "01-Apr" ~ "1-4",
+                age_group == "05-Sep" ~ "5-9",
+                age_group == "Oct-14" ~ "10-14",
+                TRUE ~ age_group
+      ))
+
+# Filter the TX_CURR, TX_PVLS_D, and TX_PVLS_N data for July 2024
+
+vl_casc_jul <- vl_casc %>%
+  filter(period == ymd("2024-07-01") & age_group != "All") %>% 
+  filter(data !="TX_NEW")
+```
+
+
+
+```{r}
+# Create the new variable within the existing vl_casc dataset
+vl_casc1 <- vl_casc %>%
+  filter(data == "TX_NEW" & month %in% c("Feb", "Mar", "Apr", "May", "Jun", "Jul") & year == 2024) %>% 
+  group_by(data, sex, age_group) %>%
+  summarise(tx_new_sum = sum(value, na.rm = TRUE)) %>%
+  ungroup() %>% 
+  rename(value = tx_new_sum)
+
+
+# Combine the new variable with the existing vl_casc_jul dataset
+
+vl_casc2 <- vl_casc_jul %>%
+  select(data, sex, age_group, value) %>%
+  bind_rows(vl_casc1)
+
+# Calculate the viral load eligibility variable for each age group in the vl_casc2 dataset (TX_CURR - TX_NEW)
+
+vl_casc2_vl_elig <- vl_casc2 %>%
+  pivot_wider(names_from = data, values_from = value) %>% # Spread TX_CURR and TX_NEW into separate columns
+  mutate(
+    TX_CURR = coalesce(TX_CURR, 0),  # Replace NA with 0 for TX_CURR
+    TX_NEW = coalesce(TX_NEW, 0), # Replace NA with 0 for TX_NEW
+    TX_PVLS_D = coalesce(TX_PVLS_D, 0), # Replace NA with 0 for TX_PVLS_D
+    vl_elig = TX_CURR - TX_NEW) %>% # Calculate the difference
+  mutate(vl_cov = TX_PVLS_D/vl_elig) #%>%
+  # select(sex, age_group, vl_elig) %>% # Select only the necessary columns
+  # pivot_longer(cols = vl_elig, names_to = "data", values_to = "value") #%>% # Convert vl_elig back to long format
+  #bind_rows(vl_casc2)
+
+
+vl_plot <- vl_casc2_vl_elig %>%
+  mutate(vl_cov = ifelse(is.nan(vl_cov) | is.na(vl_cov), 0, vl_cov))
+
+
+# Order the age_group factor levels
+vl_plot$age_group <- factor(vl_plot$age_group, levels = c("<1", "1-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50+"))
+
+# Determine the ratio for scaling the secondary axis
+ratio <- max(vl_plot$vl_elig, vl_plot$TX_PVLS_D, na.rm = TRUE) / max(vl_plot$vl_cov, na.rm = TRUE)
+
+# Create the scaled variable for vl_cov
+vl_plot <- vl_plot %>%
+  mutate(vl_cov_scaled = vl_cov * ratio)
+
+# Plot for Male
+vl_plot_male <- vl_plot %>% filter(sex == "Male")
+
+vlc_male <- ggplot(vl_plot_male, aes(x = age_group)) +
+ # geom_bar(aes(y = vl_elig, fill = "vl_elig"), stat = "identity", position = position_dodge(width = 0.6), width = 0.4) +
+  geom_bar(aes(y = TX_PVLS_D, fill = "TX_PVLS_D"), stat = "identity", position = position_dodge(width = 0.6), width = 0.8) +
+  geom_point(aes(y = vl_cov_scaled), size = 4, color = "cyan4", position = position_dodge(width = 0.4)) +
+  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color ="cyan4", fontface ="bold") +
+  scale_y_continuous(
+    name = "Counts",
+    labels = label_comma(),  # Format the y-axis with commas
+    sec.axis = sec_axis(~ . / ratio, name = "VL Coverage (%)", labels = scales::label_percent(accuracy = 1))
+  ) +
+  labs(
+  #  title = "Viral Load Coverage by Age Group - Male",
+    x = "Age Group",
+    y = "Counts"
+  ) +
+  scale_fill_manual(
+    name = "",
+    values = c("vl_elig" = "blue", "TX_PVLS_D" = "red4")
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title.y.right = element_text(color = "black"),  # Color secondary axis label
+    legend.position = "bottom",
+    panel.grid.major = element_blank(),  # Remove major grid lines
+    panel.grid.minor = element_blank()   # Remove minor grid lines
+  )
+
+# Plot for Female
+vl_plot_female <- vl_plot %>% filter(sex == "Female")
+
+vlc_fem <- ggplot(vl_plot_female, aes(x = age_group)) +
+  #geom_bar(aes(y = vl_elig, fill = "vl_elig"), stat = "identity", position = position_dodge(width = 0.6), width = 0.4) +
+  geom_bar(aes(y = TX_PVLS_D, fill = "TX_PVLS_D"), stat = "identity", position = position_dodge(width = 0.6), width = 0.8) +
+  geom_point(aes(y = vl_cov_scaled), size = 4, color ="cyan4", position = position_dodge(width = 0.4)) +
+  geom_text(aes(y = vl_cov_scaled, label = scales::percent(vl_cov, accuracy = 1)), vjust = -1, color = "cyan4", fontface="bold") +
+  scale_y_continuous(
+    name = "Counts",
+    labels = label_comma(),  # Format the y-axis with commas
+    sec.axis = sec_axis(~ . / ratio, name = "VL Coverage (%)", labels = scales::label_percent(accuracy = 1))
+  ) +
+  labs(
+  #  title = "Viral Load Coverage by Age Group - Female",
+    x = "Age Group",
+    y = "Counts"
+  ) +
+  scale_fill_manual(
+    name = "",
+    values = c("vl_elig" = "blue", "TX_PVLS_D" = "red4")
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title.y.right = element_text(color = "black"),  # Color secondary axis label
+    legend.position = "bottom",
+    panel.grid.major = element_blank(),  # Remove major grid lines
+    panel.grid.minor = element_blank()   # Remove minor grid lines
+  )
+
+```
+
+
+
+
+```{r}
+# Sum of TX_NEW from Feb 2024 to Jul 2024 to determine eligibility for VL testing
 
 tx_new_feb_jul <- data_fil %>% 
   filter(indicator == "TX_NEW_R",year == 2024 & month %in% c("Feb", "Mar", "Apr", "May", "Jun", "Jul")) %>% 
   summarise(total_tx_new = sum(value, na.rm = TRUE)) %>% 
   pull(total_tx_new)
+
+
 
 ```
 
@@ -190,8 +341,6 @@ vl_data_jul <- vl_data_site %>%
   filter(period == ymd("2024-07-01"))
 
 # Create VL Summaries by Site: VL <50, VL 50-199, VL 200-999 to be categorized as suppressed and VL >1000 to be categorized as unsuppressed
-
-
 vl_cat <- vl_data_jul %>%
   mutate(vl_category = case_when(
     viral_load_result == "<50 c/ml" ~ "Suppressed",
@@ -201,7 +350,6 @@ vl_cat <- vl_data_jul %>%
   ))
 
 # Determine Low Level Viraemia (LLV) defined as VL 50-999 c/ml
-
 vl_cat2 <- vl_cat %>%
   mutate(vl_category = case_when(
     viral_load_result == "50-199 c/ml" ~ "LLV",
@@ -493,10 +641,21 @@ value_box(
 
 ## Performance Summary {height=70%}
 
+### {width=50%}
+
 ```{r echo=FALSE, results='asis', warning=FALSE, message=FALSE, title="PROGRAM AREA PERFORMANCE AGAINST TARGETS | OCTOBER 2023 - JULY 2024", height=600, width = 900}
 # windows(width = 20, height = 10)
 grid.newpage()  # Clear the existing grid
 grid.draw(grid.arrange(grobs = plot_list, ncol = 6))
 ```
 
+### Viral Load Coverage by Age Group {width=50%}
+
+```{r title = "VIRAL LOAD COVERAGE AMONG MALES"}
+vlc_male
+```
+
+```{r title = "VIRAL LOAD COVERAGE AMONG FEMALES"}
+vlc_fem
+```
 
