@@ -24,6 +24,7 @@ pacman::p_load(tidyverse,
                units,
                rgeoboundaries,
                rnaturalearth,
+               rnaturalearthdata,
                countrycode,
                htmltools,
                reactable,
@@ -35,13 +36,18 @@ pacman::p_load(tidyverse,
                prettydoc,
                skimr,
                ggplot2,
+               ggspatial,
                gganimate,
                tidyr,
                readr,
                gifski,
                png,
                gridExtra,
-               grid)
+               grid,
+               gt,
+               flextable,
+               ggvis,
+               stringr)
 
 
 ```
@@ -58,6 +64,10 @@ vl_data <- read_csv("data/vl_data_jul24.csv")
 prog_site <- read_csv("data/prog_sites.csv")
 
 vl_casc <- read_csv("data/vl_data_agesex_jul24.csv")
+
+biom_update <- read_csv("data/biometric_update.csv")
+
+radet <- read_csv("data/radet_jul24.csv")
 
 
 ```
@@ -145,7 +155,8 @@ prog_targets <- prog_targets %>%
 prog_targets_t <- prog_targets %>% 
   mutate(prog_area = sub("_T$", "", target_code))
 
-
+biom_update <- clean_names(biom_update)
+  
 
 ```
 
@@ -575,6 +586,237 @@ ccs <- ggplot(cervical_cancer_screening, aes(x = "", y = Count, fill = Outcome))
 ```
 
 
+
+
+```{r}
+# Initial cleaning and parameter setting for the RADET
+
+radet <- clean_names(radet)
+
+cut_off_dt <- as.Date("2024-07-31", format="%Y-%m-%d")
+
+radet <- radet %>% 
+  rename(facility = facility_name)
+
+
+radet <- radet %>% 
+  mutate(facility = ifelse(facility =="ba Nigerian Army Amoured Centre Medical Reception Station Bauchi", "ba 33 Brigade Medical Center Shadawanka", facility)) %>%
+  
+  mutate(patient_status = 
+        case_when(
+          patient_status == "Dead" ~ "Known death",
+          patient_status == "Lost to follow up" ~ "Loss to follow up",
+          patient_status == "Self Transfer" ~ "Self-transfer",
+          patient_status == "Treatment stop" ~ "Stopped treatment",
+          TRUE ~ patient_status),
+        
+        facility =
+          case_when(
+            facility == "82DMSH Enugu" ~ "82 Division Medical Services and Hospital",
+            TRUE ~ facility
+          )
+  )
+
+#radet <- radet %>% 
+  # rename(sex = gender)
+```
+
+
+
+```{r}
+# Function to convert dates in "dd-MMM-yy" format to Date objects on the RADET
+convert_dates <- function(date_column) {
+  dmy(date_column)
+}
+
+# Apply the conversion function to each date field dynamically
+radet <- radet %>%
+  mutate(across(contains("date"), ~convert_dates(.), .names = "cleaned_{.col}"))
+
+# Ensure the cleaned dates are in the correct Date format
+radet <- radet %>%
+  mutate(across(contains("cleaned"), as.Date))
+```
+
+
+
+```{r}
+# creating required columns, setting cut off date, and cleaning data
+
+
+
+radet <- radet %>% 
+    mutate(
+        
+       status_check =
+           case_when((as.Date(cleaned_last_dispensed_date) + arv_refill_days +28)>=cut_off_dt & patient_status != "Known death" & patient_status !="Transferred out" & patient_status !="Stopped treatment"  ~ "Active",
+                     TRUE ~ "Inactive"),
+         
+         mmd =
+           case_when(
+             is.na(arv_refill_days) ~ NA_character_,
+             arv_refill_days <90 ~ "<3",
+             arv_refill_days >=90 & arv_refill_days <120 ~ "3",
+             arv_refill_days >=120 & arv_refill_days <180 ~ "4-5",
+             arv_refill_days >=180 ~ "6+"),
+         
+        
+        #age_group = 
+         # case_when(age_group == "04-Jan" ~ "1-4",
+          #          age_group == "09-May" ~ "5-9",
+           #         age_group == "14-Oct" ~ "10-14",
+            #        TRUE ~ age_group
+             #       
+              #      ),
+           
+         age_ngi =
+           case_when(age <15 ~ "<15",
+                    TRUE ~ "15+"),
+         
+         eligible_vl =
+           case_when((cut_off_dt - as.Date(cleaned_art_start_date)) >180 & status_check == "Active" ~ "Eligible",
+                     TRUE ~ "Ineligible"),
+         
+         current_vl = 
+           case_when(
+             is.na(eligible_vl) ~ NA_character_,
+             eligible_vl == "Ineligible" ~ NA_character_,
+             eligible_vl == "Eligible" & current_vl_result >=1 & (cut_off_dt - as.Date(cleaned_date_of_sample_collection)) <=365 ~ "Current VL",
+             TRUE ~ "No VL"),
+         
+         supp_1000 = 
+           case_when(
+             is.na(current_vl) ~ NA_character_,
+             current_vl == "Current VL" & current_vl_result >0 & current_vl_result <1000 ~ "Suppressed",
+             current_vl == "Current VL" & current_vl_result >0 & current_vl_result >=1000 ~ "Unuppressed",
+             TRUE ~ "No VL"
+           ),
+       
+         supp_50 = 
+           case_when(
+             is.na(current_vl) ~ NA_character_,
+             current_vl == "Current VL" & current_vl_result >0 & current_vl_result <50 ~ "Suppressed",
+             current_vl == "Current VL" & current_vl_result >0 & current_vl_result >=50 ~ "Unuppressed",
+             TRUE ~ "No VL"
+           ),
+         
+         vl_category =
+           case_when(
+             is.na(current_vl_result) ~ NA_character_,
+             current_vl == "Current VL" & current_vl_result >0 & current_vl_result <50 ~ "<50",
+             current_vl == "Current VL" & current_vl_result >=50 & current_vl_result <200 ~ "50-199",
+             current_vl == "Current VL" & current_vl_result >=200 & current_vl_result <1000 ~ "200-999",
+            current_vl == "Current VL" & current_vl_result >=1000 ~ "≥1000"
+           ),
+        
+         vl_monitoring = 
+           case_when(
+             is.na(viral_load_indication)| eligible_vl=="Ineligible" | current_vl =="No VL" ~ NA_character_,
+        viral_load_indication = grepl("baseline", viral_load_indication, ignore.case = TRUE) | grepl("pregnancy", viral_load_indication, ignore.case = TRUE) | grepl("routine", viral_load_indication, ignore.case = TRUE) | grepl("1month", viral_load_indication, ignore.case = TRUE) ~ "Routine", 
+             TRUE ~ "Targeted"
+           ),
+        
+        
+      regimen_line = 
+           case_when(regimen_line == "Adult 1st Line" ~ "1st Line",
+                     regimen_line == "Adult First Line" ~ "1st Line",
+                     regimen_line == "Pediatric 1st Line" ~ "1st Line",
+                     regimen_line == "Pediatric 1st line" ~ "1st Line",
+                     regimen_line == "Pediatric First Line" ~ "1st Line",
+                     regimen_line == "Pediatrics and Adolescent 1st Line <20kg" ~ "1st Line",
+                     regimen_line == "Pediatrics and Adolescent 1st Line >30kg" ~ "1st Line",
+                     regimen_line == "Pediatrics and Adolescent 1st Line 20-30kg" ~ "1st Line",
+                     regimen_line == "Adult 2nd Line" ~ "2nd Line",
+                     regimen_line == "Adult Second Line" ~ "2nd Line",
+                     regimen_line == "Pediatric 2nd Line" ~ "2nd Line",
+                     regimen_line == "Pediatric Second Line" ~ "2nd Line",
+                     regimen_line == "Pediatrics and Adolescent 2nd Line <20kg" ~ "1st Line",
+                     regimen_line == "Pediatrics and Adolescent 2nd Line >30kg" ~ "1st Line",
+                     regimen_line == "Pediatrics and Adolescent 2nd Line 20-30kg" ~ "1st Line",
+                     regimen_line == "Adult Third Line" ~ "3rd Line",
+                     regimen_line == "Adult 3rd Line" ~ "3rd Line",
+                     regimen_line == "Pediatrics and Adolescent 3rd Line >30kg" ~ "3rd Line",
+                     TRUE ~ regimen_line),
+      
+      
+      
+      sex =
+        case_when(
+          sex == "Other" ~ "Female",
+          sex == "transgender" ~ "Female",
+          TRUE ~ sex),
+      
+       service_status =
+        case_when(
+          is.na(service_status) ~ "Civilian",
+          TRUE ~ service_status
+        )
+   ) 
+
+
+radet_tx_curr <- radet %>%
+  filter(status_check == "Active") %>% 
+  summarise(total_tx_curr = n()) %>% # Count the number of active patients
+  pull(total_tx_curr)                # Extract the resulting value
+
+
+```
+
+
+
+
+```{r}
+
+tx_curr_summary <- radet %>%
+  filter(status_check == "Active") %>%
+  group_by(state) %>%
+  summarise(tx_curr = n())
+
+# Load map data for Nigeria
+nigeria_map <- geoboundaries(country = "Nigeria", adm_lvl = 1)
+
+nigeria_map <- nigeria_map %>%
+  mutate(state = ifelse(shapeName =="Abuja Federal Capital Territory", "Federal Capital Territory", shapeName))
+
+# Join the summarized tx_curr data with the map data
+nigeria_tx_curr_map <- nigeria_map %>%
+  left_join(tx_curr_summary, by = c("state" = "state"))
+
+
+
+
+```
+
+
+```{r}
+# Plot Leaflet Map for Active Patients by State
+
+tx_curr_map <- leaflet(nigeria_tx_curr_map) %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  addPolygons(
+    fillColor = ~colorNumeric("Blues", domain=nigeria_tx_curr_map$tx_curr)(tx_curr),
+    weight = 1,
+    opacity = 1,
+    color = 'black',
+    dashArray = '3',
+    fillOpacity = 0.8,
+    highlight = highlightOptions(
+      weight = 5,
+      color = "#666",
+      dashArray = "",
+      fillOpacity = 1,
+      bringToFront = TRUE
+    ),
+    label = ~paste(state, ": TX_CURR: ", tx_curr)
+  ) %>%
+  addLegend(pal = colorNumeric("Blues", nigeria_tx_curr_map$tx_curr),
+            values = ~tx_curr, opacity = 0.7, title = "TX_CURR",
+            position = "bottomright")
+
+```
+
+
+
 # PROGRAM CASCADE FY24
 
 ##  {height="30%"}
@@ -694,13 +936,11 @@ ccs
 
 ### Viral Load Coverage by Age Group {width=55%}
 
-```{r title = "VIRAL LOAD COVERAGE AMONG MALES", fig.width=20, fig.height=7}
+```{r title = "PATIENTS ON ANTIRETROVIRALS (ART) BY STATE", fig.width=20, fig.height=7}
 
-vlc_male
+tx_curr_map
 ```
 
-```{r title = "VIRAL LOAD COVERAGE AMONG FEMALES", fig.width=20, fig.height=7}
-# windows (width = 20, height = 10)
-vlc_fem
-```
+
+
 
